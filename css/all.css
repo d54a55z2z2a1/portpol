@@ -1,0 +1,86 @@
+@charset "utf-8" ;
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+/* 초기값, 공통요소(제목, 폰트스타일, 버튼) 웹폰트 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color:#333;
+    min-width: 1900px;
+    line-height: 1;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+/* 공통스타일 */
+
+.inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.title h3 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.title p {
+    font-size: 18px;
+}
+
+.btn li {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(255, 0, 0)(190, 52, 52);
+    
+    color: #444;
+    
+    padding: 0 22px;
+    padding-right: 42px;
+    border-radius: 40px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}   
+
+.btn li:hover {    
+    background-color: white;
+    
+    transition: all 0.3s;
+    
+}
+
+
+.btn li img {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
