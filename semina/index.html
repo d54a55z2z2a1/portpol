@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세미네부엌_플랫폼</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* 부모값 */
+            
+        }
+
+        body {
+            color: #333;
+            line-height: 1;
+        }
+
+        header {
+            height: 100px;
+            border-bottom: 1px solid #eee;
+        }
+
+        header .inner {
+            display: flex;
+            justify-content: space-between ; /* 브라우저 양끝으로 붙히기 */
+            width: calc(100% - 180px);
+            
+            margin: 0 auto;
+            height: 100%;
+            align-items: center; /* 글자, 로고 수직 가운데정렬 */
+        }
+
+        header .inner ul {
+            display: flex;
+            align-items: center;
+        }
+        
+        header .inner nav ul li {
+            margin: 0 30px;            
+        }
+       
+        header .inner nav ul li a {
+            display: flex;
+            align-items: center;
+        }
+
+        header .inner .right_menu li:nth-child(1) {
+            margin-right: 20px;
+        }
+
+        /* 😊😊😊😊😊 .main_visual 😊😊😊😊😊 */
+
+        .main_visual {
+            width: calc(100% - 180px);
+            margin: 0 auto;
+        }
+
+        .main_visual img {
+            width: 100%;
+        }
+        
+        /* 😊😊😊😊😊 .cont01 st 😊😊😊😊😊 */
+
+        .cont01  {        
+            padding: 80px 0;
+        }
+
+        .cont01 .inner {
+            width: 1440px;
+            margin:  0 auto;
+                        
+        }
+
+        .cont01 .inner h3 {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        .cont01 .inner .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .cont01 .inner .list .item {
+            width: 342px;
+            margin-bottom: 50px;
+        }
+
+        .cont01 .inner .list .item div h4 {
+            margin: 28px 0 21px;
+        }
+
+        .cont01 .inner .list .item div ul {
+            margin: 31px 0 0px;
+        }
+
+        .cont01 .inner .list .item:hover figure img {
+            transform: scale(1.2);
+            /* 선택자 확대, 축소 */
+        }        
+
+        .cont01 .inner .list .item figure {
+            width: 342px;
+            height: 342px;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .cont01 .inner .list .item figure img { /* ★ 중요 ★ */
+            width: 100%;
+            transition: 0.7s;
+        }
+
+        .cont01 .inner .list .item div ul li {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 40px;
+        }
+
+        .cont01 .inner .list .item div ul li img {
+            vertical-align: middle; /* 인라인 요소가 있을 때 수직정렬
+            inline,
+            display:inline,
+            display:inline-block */
+            
+
+        }
+
+        /* 😊😊😊😊😊 .cont02 st 😊😊😊😊😊 */
+
+        .cont02 .inner .list {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .cont02 .inner .list .item div ul li {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 40px;
+        }
+
+        .cont02 .inner .list .item div ul li img {
+            vertical-align: middle;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#"><img src="semie-cooking-logo.svg" alt="로고이미지"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>요리 상담소</li>
+                    <li>요리법 연구소</li>
+                    <li>요리해요</li>
+                    <li>맛있는 추억을 그리다</li>
+                    <li><a href="#"><img src="semie-wow.svg" alt="wow">이벤트</a></li>                    
+                </ul>
+            </nav>
+            <ul class="right_menu">
+                <li><a href="#"><img src="img/돋보기.png" alt="돋보기"></a></li>
+                <li><a href="#"><img src="img/회원가입.png" alt="회원가입"></a></li>
+            </ul> <!-- .right_menu end -->
+        </div> <!-- .inner end -->
+    </header>
+
+    <section class="main_visual">
+        <img src="img/main_visual.jpg" alt="새미와 함께 요리해요">
+    </section> <!-- .main_visual end -->
+
+    <section class="cont01">
+        <div class="inner">
+            <h3>우리 함께 요리해볼까요?</h3>
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/cont1_01.png" alt="스트레스가 날아가는 순간!">
+                    </figure>
+                    <div>
+                        <h4>스트레스가 날아가는 순간!</h4>
+                        <p>찌릿! 매콤얼얼 마라탕과 마라샹궈</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>22</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 1 -->
+                <div class="item">
+                    <figure>
+                        <img src="img/cont1_02.png" alt="추운 겨울 생각나는 뜨끈~한 국물
+                        요리">
+                    </figure>
+                    <div>
+                        <h4>추운 겨울 생각나는 뜨끈~한 국물
+                            요리</h4>
+                        <p>바다향 가득 대구지리탕</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>6</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 2 --> 
+                <div class="item">
+                    <figure>
+                        <img src="img/cont1_03.png" alt="김장철, 남은 배추가 있다면?">
+                    </figure>
+                    <div>
+                        <h4>김장철, 남은 배추가 있다면?</h4>
+                        <p>취향따라 2가지 수육</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>17</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>9</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 3 --> 
+                <div class="item">
+                    <figure>
+                        <img src="img/cont1_04.png" alt="육지 채소로 건강한 집밥">
+                    </figure>
+                    <div>
+                        <h4>육지 채소로 건강한 집밥</h4>
+                        <p>담백하게또는 얼큰하게! 두가지 뭇국</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>13</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 4 --> 
+
+                <div class="item">
+                    <figure>
+                        <img src="img/cont2_01.png" alt="지구를 위해 채소해요">
+                    </figure>
+                    <div>
+                        <h4>지구를 위해 채소해요</h4>
+                        <p>쏘세지 볶음</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>22</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 5 -->
+                <div class="item">
+                    <figure>
+                        <img src="img/cont2_02.png" alt="손님 초대 요리는 이렇게, 집들이 음
+                        식!">
+                    </figure>
+                    <div>
+                        <h4>손님 초대 요리는 이렇게, 집들이 음
+                            식!</h4>
+                        <p>고기빵</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>6</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 6 --> 
+                <div class="item">
+                    <figure>
+                        <img src="img/cont2_03.png" alt="배달요리 이렇게 변신!">
+                    </figure>
+                    <div>
+                        <h4>배달요리 이렇게 변신!</h4>
+                        <p>또띠아</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>17</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>9</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 7 --> 
+                <div class="item">
+                    <figure>
+                        <img src="img/cont2_04.png" alt="따뜻한 음식이 생각난다면?">
+                    </figure>
+                    <div>
+                        <h4>따뜻한 음식이 생각난다면?</h4>
+                        <p>된장국</p>
+                        <ul>
+                            <li><img src="img/icon1.png" alt="하트아이콘">
+                            <span>13</span>
+                            </li>
+                            <li><img src="img/icon2.png" alt="댓글아이콘">
+                            <span>2</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .item end 8 --> 
+
+            </div> <!-- .list end -->
+        </div> <!-- .inner end -->
+    </section> <!-- .cont01 end -->
+    
+          
+</body>
+</html>
